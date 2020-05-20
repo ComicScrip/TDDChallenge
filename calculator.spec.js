@@ -12,4 +12,8 @@ describe('calculator', () => {
   it('should take up to two numbers, separated by commas, and return their sum', () => {
     expect(add("1,2")).toBe(3)
   })
+
+  it('should handle an unknown amount of numbers', () => {
+    expect(add("1,2,5,7")).toBe(15)
+  })
 })
