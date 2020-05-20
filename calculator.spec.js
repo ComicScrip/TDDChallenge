@@ -16,4 +16,8 @@ describe('calculator', () => {
   it('should handle an unknown amount of numbers', () => {
     expect(add("1,2,5,7")).toBe(15)
   })
+
+  it('should handle new lines between numbers (instead of commas)', () => {
+    expect(add("1\n2,3")).toBe(6)
+  })
 })
